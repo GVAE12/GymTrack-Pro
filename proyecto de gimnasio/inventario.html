@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionar Inventario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Asegúrate de que el archivo CSS esté en la misma carpeta que tu archivo HTML o ajusta la ruta -->
+  <link rel="stylesheet" href="assets/css/inventario.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulario para Agregar Equipos -->
+    <section class="form-section">
+      <h2>Agregar Nuevo Equipo</h2>
+      <form id="add-equipment-form">
+        <input type="text" id="equipment-name" placeholder="Nombre del Equipo" required>
+        <select id="equipment-status" required>
+          <option value="">Estado del Equipo</option>
+          <option value="nuevo">Nuevo</option>
+          <option value="usado">Usado</option>
+          <option value="dañado">Dañado</option>
+        </select>
+        <input type="date" id="purchase-date" required>
+        <button type="submit" class="btn">Agregar Equipo</button>
+      </form>
+    </section>
+
+    <!-- Lista de Inventario -->
+    <section class="inventory-section">
+      <h2>Inventario Actual</h2>
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Fecha de Compra</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas de equipos generadas dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Acciones -->
+    <section class="actions-section">
+      <button class="btn modify-equipment">Modificar Equipo</button>
+      <button class="btn remove-equipment">Dar de Baja Equipo</button>
+      <button class="btn generate-report">Generar Informe de Inventario</button>
+    </section>
+  </div>
+
+  <script src="assets/js/inventario.js"></script>
+</body>
+</html>

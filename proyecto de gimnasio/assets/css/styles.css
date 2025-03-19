@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #2D2D2D; /* Fondo gris oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  /* Contenedor del formulario */
+  .login-container {
+    background: #222222; /* Fondo negro */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Logo (más grande) */
+  .logo {
+    width: 150px; /* Tamaño aumentado */
+    margin-bottom: 1.5rem; /* Margen ajustado */
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #E63946; /* Rojo primario */
+  }
+  
+  /* Grupos de entrada (centrados y mejor alineados) */
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem; /* Más espacio entre campos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 15px; /* Ajuste de posición del ícono */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFC107; /* Amarillo acento */
+  }
+  
+  .input-group input {
+    width: 90%; /* Ancho reducido para centrar mejor */
+    padding: 10px 10px 10px 40px; /* Padding ajustado */
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: #333333; /* Fondo gris oscuro para campos */
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  .input-group input:focus {
+    border-color: #FFC107; /* Amarillo acento al enfocar */
+  }
+  
+  /* Botón de mostrar/ocultar contraseña */
+  #togglePassword {
+    position: absolute;
+    right: 25px; /* Ajuste de posición del ícono de ojo */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #FFC107; /* Amarillo acento */
+  }
+  
+  /* Botón de Iniciar Sesión */
+  button {
+    width: 90%; /* Ancho reducido para centrar mejor */
+    padding: 10px;
+    background: #E63946; /* Rojo primario */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #C5303A; /* Rojo más oscuro al pasar el mouse */
+  }
+  
+  /* Enlace de Recuperar Contraseña */
+  .forgot-password {
+    display: block;
+    margin-top: 1rem;
+    color: #FFC107; /* Amarillo acento */
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mensaje de Error */
+  .error-message {
+    color: #E63946; /* Rojo primario */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: none;
+  }
